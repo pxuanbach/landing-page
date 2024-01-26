@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="topnav">
       <a href="index.html">Home</a>
@@ -14,8 +15,8 @@
   </body>
   <script type="text/javascript">
     var epVars = {
-      adminUrl: "https://devadmin.earlyparrot.com",
-      appUrl: "https://devapp.earlyparrot.com",
+      adminUrl: "https://admin.earlyparrot.com",
+      appUrl: "https://app.earlyparrot.com",
       campaignId: "65b369cae090d26e59945f04",
       style: "mirasee",
     };
@@ -28,7 +29,7 @@
     })(
       window,
       document,
-      "https://s3.amazonaws.com/earlyparrot-dev-scripts/ep-share-page.js"
+      "https://s3.amazonaws.com/earlyparrot-production-scripts/ep-share-page.js"
     );
   </script>
   <style>
@@ -37,14 +38,17 @@
         height: 790px;
       }
     }
+
     @media (max-width: 577px) {
       .epWrapper {
         height: 790px;
       }
     }
+
     .epWrapper {
       position: relative;
     }
+
     .epWrapper iframe {
       position: absolute;
       top: 0;
